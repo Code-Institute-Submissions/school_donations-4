@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>School Donations Dashboard</title>
+    <link rel="stylesheet" href="{{ url_for ('static',
+         filename='lib/css/bootstrap.min.css')}}">
+    <link rel="stylesheet" href="{{ url_for ('static',
+         filename='lib/css/keen-dashboards.css')}}">
+    <link rel="stylesheet" href="{{ url_for ('static', filename='lib/css/dc.css')}}">
+    <link rel="stylesheet" href="{{ url_for ('static', filename='css/custom.css')}}">
+    <link rel="stylesheet" href="{{ url_for ('static', filename='lib/css/introjs.css')}}">
+ </head>
+<body class="application">
+
+<div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+   <div class="container-fluid">
+       <div class="navbar-header">
+           <a class="navbar-brand" href="./">School Donations Dashboard</a>
+       </div>
+            <div>
+                <button class="introjs-button" type="button" autofocus onclick="javascript:introJs().start();">Start Tour!
+                </button>
+            </div>
+   </div>
+</div>
+
+
+<div  id="outer" class="container-fluid">
+
+   <div class="row">
+
+       <div class="col-sm-12">
+           <div class="row">
+
+                       <!-- Resources Pie -->
+               <div class="col-sm-3">
+                   <div class="chart-wrapper">
+                       <div class="chart-title">
+                           Resources Type
+                       </div>
+                       <div class="chart-stage">
+                           <div id="resource-type-row-chart" data-step="1" data-intro="Interactive Bar Chart showing
+                            type of resource spending from donations"
+                            style="font-weight: normal" data-position="right"></div>
+                       </div>
+                   </div>
+               </div>
+               <!-- Resources Pie-->
+
+               <!-- Poverty -->
+               <div class="col-sm-3">
+                   <div class="chart-wrapper">
+                       <div class="chart-title">
+                           Poverty Level
+                       </div>
+                       <div class="chart-stage">
+                           <div id="poverty-level-row-chart" data-step="2" data-intro="Bar Chart showing the level of
+                            poverty that donations went too.  Click on bars for details"
+                                    style="font-weight: normal" data-position="right"></div>
+                       </div>
+                   </div>
+               </div>
+               <!-- Poverty -->
+
+               <!--US Map-->
+               <div class="col-sm-6">
+                   <div class="chart-wrapper">
+                       <div class="chart-title">
+                           Distribution of Donations
+                       </div>
+                       <div class="chart-stage">
+                           <div id="us-chart" data-step="3" data-intro="Geo Chart showing donations by State. Click on
+                            States individually or as Groups to view detail per State"
+                            style="font-weight: normal" data-position="left"></div>
+                       </div>
+                   </div>
+               </div>
+               <!--US Map-->
+
+
+               <!-- Time Chart -->
+               <div class="col-sm-6">
+                   <div class="chart-wrapper">
+                       <div class="chart-title">
+                           Number of Donations
+                       </div>
+                       <div class="chart-stage">
+                           <div id="time-chart" data-step="4" data-intro="Number of Donations by Month.
+                           Click and drag for detail on specific time-lines"
+                            style="font-weight: normal" data-position="right"></div>
+                       </div>
+                   </div>
+               </div>
+               <!-- Time Chart -->
+
+
+
+{#       <!-- funding Pie -->#}
+{#               <div class="col-sm-3">#}
+{#                   <div class="chart-wrapper">#}
+{#                       <div class="chart-title">#}
+{#                           Funding Status#}
+{#                       </div>#}
+{#                       <div class="chart-stage">#}
+{#                           <div id="funding-chart" data-step="5" data-intro="Pie Chart showing status of Funding.#}
+{#                             Again you can click on slices in combination with other charts to view detail"#}
+{#                            style="font-weight: normal" data-position="left"></div>#}
+{#                       </div>#}
+{#                   </div>#}
+{#               </div>#}
+{#               <!-- funding Pie -->#}
+
+       <!-- Subject Pie -->
+               <div class="col-sm-4">
+                   <div class="chart-wrapper">
+                       <div class="chart-title">
+                           Primary Subject Area
+                       </div>
+                       <div class="chart-stage">
+                           <div id="subject-chart" data-step="5" data-intro="Pie Chart showing the Primary Subject Area
+                            per School. Can be used to analyse which Subject areas attract the most funding"
+                            style="font-weight: normal" data-position="left"></div>
+                       </div>
+                   </div>
+               </div>
+               <!-- Subject Pie -->
+
+
+
+                <!-- Metric 1 -->
+       <div class="col-sm-2">
+           <div class="chart-wrapper">
+               <div class="chart-title">
+                   Total Number of Donations
+               </div>
+               <div class="chart-stage" style=" background: #33CC99;
+                   position: relative;
+                   font-size: 29px;
+                   color: white;
+                   vertical-align: middle;
+                   text-align: center;
+                   padding-top: 12px;
+                   padding-bottom: 0px;">
+                   <div id="number-projects-nd" data-step="6" data-intro="Total amount of donations depending on data
+                    selected in other charts"
+                            style="font-weight: normal" data-position="left"></div>
+               </div>
+           </div>
+{#       </div>#}
+
+       <!-- Metric 1 -->
+
+       <!-- Metric 2 -->
+{#       <div class="col-sm-2">#}
+           <div class="chart-wrapper">
+               <div class="chart-title">
+                   Total Donations in USD
+               </div>
+               <div class="chart-stage">
+                   <div id="total-donations-nd" data-step="7" data-intro="Total amount of donations in US Dollars
+                   depending on data selected in other charts"
+                            style="font-weight: normal" data-position="left"></div>
+               </div>
+           </div>
+       </div>
+       <!-- Metric 2 -->
+
+ </div>
+       </div>
+
+{#       <!-- menu select -->#}
+{#       <div class="col-sm-6">#}
+{#           <div class="chart-wrapper">#}
+{#               <div class="chart-title">#}
+{#                   Donation State#}
+{#               </div>#}
+{#               <div class="chart-stage">#}
+{#                   <div id="menu-select"></div>#}
+{#               </div>#}
+{#           </div>#}
+{#       </div>#}
+{#       <!-- menu select -->#}
+
+
+
+
+   </div>
+</div>
+
+<hr>
+<p class="small text-muted"> Made with &#9829; by Philip</a></p>
+
+</div>
+<script src="{{ url_for ('static', filename='lib/js/jquery.min.js')}}"></script>
+<script src="{{ url_for ('static', filename='lib/js/bootstrap.min.js')}}"></script>
+<script src="{{ url_for ('static', filename='lib/js/crossfilter.js')}}"></script>
+<script src="{{ url_for ('static', filename='lib/js/d3.js')}}"></script>
+<script src="{{ url_for ('static', filename='lib/js/dc.js')}}"></script>
+<script src="{{ url_for ('static', filename='lib/js/queue.js')}}"></script>
+
+<script src="{{ url_for ('static', filename='lib/js/keen.min.js')}}"></script>
+<script src="{{ url_for ('static', filename='js/graph.js')}}"></script>
+<script src="{{ url_for ('static', filename='lib/js/intro.js')}}"></script>
+</body>
+</html>
