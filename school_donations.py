@@ -10,7 +10,7 @@ app = Flask(__name__)
 
 MONGODB_HOST = 'ds033259.mlab.com'  # This time we won't be using the digits after the colon - eg. ds047305.mlab.com
 MONGODB_PORT = 33259  # This is for the port. This where the digits after the colon go.
-DBS_NAME = 'MONGO_DB_NAME'  # Where MONGO_DB_NAME is your database name - eg. heroku_1wgm307k
+DBS_NAME = 'heroku_fqw52m2t'  # Where MONGO_DB_NAME is your database name - eg. heroku_1wgm307k
 MONGO_URI = os.getenv('MONGODB_URI')
 COLLECTION_NAME = 'projects'
 FIELDS = {'primary_focus_area': True, 'funding_status': True, 'school_state': True, 'resource_type': True,
