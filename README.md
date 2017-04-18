@@ -8,7 +8,7 @@ This was created for my Stream 2 Code Institute project.  It is the interactive 
 
 ### What does it do?
 
-This app visually represents datasets from DonorChoose.org in the form of interactive and interconnected bar charts, pie charts, a timeline and a choloropeth chart in the form of a map of the US by State.  The charts dynamically change in response to user interaction.
+This app visually represents datasets from DonorChoose.org in the form of interactive and interconnected bar charts, pie charts, a timeline and an interactive choropeth map of the US by State.  The charts are dynamically connected and change in response to user interaction
 
 ### How does it work?
 
