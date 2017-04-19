@@ -13,9 +13,10 @@ MONGODB_PORT = 33259
 DBS_NAME = 'heroku_fqw52m2t'
 MONGO_URI = os.getenv('MONGODB_URI')
 COLLECTION_NAME = 'projects'
+# FIELDS is the constant that defines the record fields that we wish to retrieve and form the basis of the project
 FIELDS = {'primary_focus_area': True, 'funding_status': True, 'school_state': True, 'resource_type': True,
           'poverty_level': True, 'date_posted': True, 'total_donations': True, '_id': False} 
-# FIELDS is the constant that defines the record fields that we wish to retrieve and form the basis of the project
+
 
 
 @app.route("/")
