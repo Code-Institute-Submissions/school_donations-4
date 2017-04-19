@@ -35,8 +35,6 @@ This app is built using the Flask micro-framework using a dataset from DonorsCho
 ### Some of the tech used includes:
 - [Flask](http://flask.pocoo.org/)
 	- Python based micro-framework for building a server that interacts with MongoDB and renders the html page that contains the charts
-- [Bootstrap](http://getbootstrap.com/)
-	- We use **Bootstrap** to give our project a simple, responsive layout
 - [MongoDB](https://www.mongodb.com/)
 	- MongoDB is a free and open-source cross-platform document-oriented database program. Classified as a NoSQL database program, MongoDB uses JSON-like documents with schemas
 - [d3.js](https://d3js.org/)
@@ -46,4 +44,8 @@ This app is built using the Flask micro-framework using a dataset from DonorsCho
 - [crossfilter.js](http://square.github.io/crossfilter/)
 	- Crossfilter is a JavaScript library for grouping, filtering, and aggregating large datasets
 - [queue.js](https://github.com/d3/d3-queue)
-	- An asynchronous helper library for JavaScript.
+	- An asynchronous helper library for JavaScript
+- [keen.js](https://github.com/keen)
+	- a dashboard template library
+- [Bootstrap](http://getbootstrap.com/)
+	- We use **Bootstrap** to give our project a simple, responsive layout in combination with keen-dashboards.css
