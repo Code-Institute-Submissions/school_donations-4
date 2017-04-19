@@ -49,3 +49,5 @@ This app is built using the Flask micro-framework using a dataset from DonorsCho
 	- a dashboard template library
 - [Bootstrap](http://getbootstrap.com/)
 	- We use **Bootstrap** to give our project a simple, responsive layout in combination with keen-dashboards.css
+- [intro.js](http://introjs.com/)
+	- assign an interactive onboarding tutorial to our graphs and display helpful information to the user who is going to use the dashboard
