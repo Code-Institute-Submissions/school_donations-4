@@ -2,6 +2,7 @@
  * Created by Philip on 24/01/2017.
  */
 queue()
+// function which utilizes the queue library for asynchronous loading
    .defer(d3.json, "/donorsUS/projects")
    .defer(d3.json, "static/geojson/us-states.json")
    .await(makeGraphs);
@@ -69,7 +70,7 @@ function makeGraphs(error, projectsJson, statesJson) {
    var minDate = dateDim.bottom(1)[0]["date_posted"];
    var maxDate = dateDim.top(1)[0]["date_posted"];
 
-   //Charts
+   //Charts defined using dc.js library
    var timeChart = dc.barChart("#time-chart");
    var resourceTypeChart = dc.rowChart("#resource-type-row-chart");
    var povertyLevelChart = dc.rowChart("#poverty-level-row-chart");
