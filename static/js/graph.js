@@ -132,11 +132,11 @@ function makeGraphs(error, projectsJson, statesJson) {
        .height(300)
        .dimension(stateDim)
        .group(totalDonationsByState)
-       .colors(["#b7ebff",
-           "#f2f200",
-           "#e2781b",
-           "#e24e04",
-           "#c10000"])
+       .colors(["#ffff8f",
+           "#d3c600",
+           "#e29d00",
+           "#e25c15",
+           "#fd0b00"])
        .colorDomain([0, max_state])
        .overlayGeoJson(statesJson["features"], "state", function (d) {
            return d.properties.name;
