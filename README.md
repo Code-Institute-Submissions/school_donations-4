@@ -16,12 +16,12 @@ This app is built using the Flask micro-framework using a dataset from DonorsCho
 
 ## Features
 
-### Existing Features
+### Existing Features:
 - Bar Chart for 'Resources Type':
 	- Representing what the donations were spent on by resource
 - Bar Chart for 'Poverty Level':
 	- Representing what level of school 'poverty' the donations went too
-- Choropleth chart for 'Distribution of Donations':
+- Interactive Choropleth map for 'Distribution of Donations':
 	- A clickable, colour-coded choropleth map of the US by State to explore detail of donations per State or multiple States
 - Timeline Line Chart for 'Number of Donations':
 	- Represents number of donations per Quarter over a number of Years.  Users can select specific timelines for further detail
@@ -51,3 +51,12 @@ This app is built using the Flask micro-framework using a dataset from DonorsCho
 	- We use **Bootstrap** to give our project a simple, responsive layout in combination with keen-dashboards.css
 - [intro.js](http://introjs.com/)
 	- assign an interactive onboarding tutorial to our graphs and display helpful information to the user who is going to use the dashboard
+
+## Modifications
+
+### Enhancements and changes were made to the original project:
+- These were namely in the choice of fields and the associated data visualisation  
+- 'Primary Subject Area' is used for the Pie Chart instead of 'Funding Status' 
+- I opted to use an interactive Choropleth Map in place of a drop down box to provide a more visually appealing, more dynamic and more informative representation of Donations by State  
+- This was partly inspired and assisted by an online tutorial from [adilmoujahid.com](http://adilmoujahid.com/posts/2015/01/interactive-data-visualization-d3-dc-python-mongodb/)
+- This created the added benefit of making use of the queue.js function
