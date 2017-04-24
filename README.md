@@ -52,11 +52,16 @@ This app is built using the Flask micro-framework using a dataset from DonorsCho
 - [intro.js](http://introjs.com/)
 	- assign an interactive onboarding tutorial to our graphs and display helpful information to the user who is going to use the dashboard
 
+## Testing
+
+- Testing was performed in the browser and Unit Testing was conducted on the graph functions
+
 ## Modifications
 
 ### Enhancements and changes were made to the original project:
 - These were namely in the choice of fields and the associated data visualisation  
 - 'Primary Subject Area' is used for the Pie Chart instead of 'Funding Status'
+- A Choropleth Map was used in place of the Donations by State drop down box, see acknowledgements below
 
 ## Acknowledgements
 
