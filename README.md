@@ -56,7 +56,10 @@ This app is built using the Flask micro-framework using a dataset from DonorsCho
 
 ### Enhancements and changes were made to the original project:
 - These were namely in the choice of fields and the associated data visualisation  
-- 'Primary Subject Area' is used for the Pie Chart instead of 'Funding Status' 
+- 'Primary Subject Area' is used for the Pie Chart instead of 'Funding Status'
+
+## Acknowledgements
+
 - I opted to use an interactive Choropleth Map in place of a drop down box to provide a more visually appealing, more dynamic and more informative representation of Donations by State  
 - This was partly inspired and assisted by an online tutorial from [adilmoujahid.com](http://adilmoujahid.com/posts/2015/01/interactive-data-visualization-d3-dc-python-mongodb/)
 - This created the added benefit of making use of the queue.js function
